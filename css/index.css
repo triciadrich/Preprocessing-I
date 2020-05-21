@@ -202,15 +202,28 @@ header .intro {
   background: snow;
   margin-right: 40px;
 }
+@media (max-width: 500px) {
+  .skillsandwork .skills {
+    width: 50%;
+    background: gray;
+    align-self: center;
+    padding: 5px;
+  }
+}
 .skillsandwork h2 {
   margin-bottom: 10px;
-  font-size: 2rem;
-  color: black;
-  font-family: "Dancing Script", cursive;
+  color: #531b78;
   justify-content: center;
+  font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  .skillsandwork h2 {
+    align-self: center;
+    width: 40%;
+  }
 }
 .skillsandwork .exp {
-  width: 40%;
+  width: 50%;
   background-color: rebeccapurple;
   color: black;
   border: 10px;
@@ -224,4 +237,16 @@ header .intro {
     margin-top: 20px;
     background-color: white;
   }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  width: 98%;
+}
+footer button {
+  width: 10%;
+  height: 30px;
+  border: 5px solid purple;
+  text-decoration: none;
+  margin: 10px;
 }
